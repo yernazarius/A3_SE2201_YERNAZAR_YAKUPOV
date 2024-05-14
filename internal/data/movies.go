@@ -8,8 +8,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/MakyKari/A3_SE2201_AISULTAN_TABULDIN/internal/validator"
 	"github.com/lib/pq"
+	"github.com/yernazarius/A3_SE2201_YERNAZAR_YAKUPOV/internal/validator"
 )
 
 // Movie type whose fields describe the movie.

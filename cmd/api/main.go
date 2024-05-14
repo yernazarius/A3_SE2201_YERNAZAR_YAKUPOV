@@ -6,16 +6,17 @@ import (
 	"expvar"
 	"flag"
 	"fmt"
+	"net/http"
 	"os"
 	"runtime"
 	"strings"
 	"sync"
 	"time"
 
-	"github.com/MakyKari/A3_SE2201_AISULTAN_TABULDIN/internal/data"
-	"github.com/MakyKari/A3_SE2201_AISULTAN_TABULDIN/internal/jsonlog"
-	"github.com/MakyKari/A3_SE2201_AISULTAN_TABULDIN/internal/mailer"
-	"github.com/MakyKari/A3_SE2201_AISULTAN_TABULDIN/internal/vcs"
+	"github.com/yernazarius/A3_SE2201_YERNAZAR_YAKUPOV/internal/data"
+	"github.com/yernazarius/A3_SE2201_YERNAZAR_YAKUPOV/internal/jsonlog"
+	"github.com/yernazarius/A3_SE2201_YERNAZAR_YAKUPOV/internal/mailer"
+	"github.com/yernazarius/A3_SE2201_YERNAZAR_YAKUPOV/internal/vcs"
 
 	// Import the pq driver so that it can register itself with the database/sql
 	// package. Note that we alias this import to the blank identifier, to stop the Go
@@ -81,7 +82,7 @@ func main() {
 
 	// Read the DSN Value from the db-dsn command-line flag into the config struct.
 	// We default to using our development DSN if no flag is provided.
-	flag.StringVar(&cfg.db.dsn, "db-dsn", "postgres://postgres:123456789@localhost/greenlight?sslmode=disable", "PostgreSQL DSN")
+	flag.StringVar(&cfg.db.dsn, "db-dsn", "postgres://lcvxqasm:PrV6HhzVYC-hi7SNVJpefICmal4zKQpu@abul.db.elephantsql.com/lcvxqasm", "PostgreSQL DSN")
 
 	// Read the connection pool settings from command-line flags into the config struct.
 	// Notice the default values that we're using?

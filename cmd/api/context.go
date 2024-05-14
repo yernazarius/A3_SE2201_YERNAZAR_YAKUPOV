@@ -4,14 +4,12 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/MakyKari/A3_SE2201_AISULTAN_TABULDIN/internal/data"
+	"github.com/yernazarius/A3_SE2201_YERNAZAR_YAKUPOV/internal/data"
 )
 
 type contextKey string
 
-
 const userContextKey = contextKey("user")
-
 
 func (app *application) contextSetUser(r *http.Request, user *data.User) *http.Request {
 	ctx := context.WithValue(r.Context(), userContextKey, user)

@@ -1,4 +1,4 @@
-module github.com/MakyKari/A3_SE2201_AISULTAN_TABULDIN
+module github.com/yernazarius/A3_SE2201_YERNAZAR_YAKUPOV
 
 go 1.18
 
@@ -13,7 +13,6 @@ require (
 )
 
 require (
-	github.com/stretchr/testify v1.9.0 // indirect
 	gopkg.in/alexcesaro/quotedprintable.v3 v3.0.0-20150716171945-2caba252f4dc // indirect
 	gopkg.in/mail.v2 v2.3.1 // indirect
 )
